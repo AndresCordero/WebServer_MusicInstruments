@@ -1,4 +1,4 @@
-let products = [
+/* let products = [
     { id: 1, name: "Fender Stratocaster", category: "Guitar", price: 1200, inStock: true },
     { id: 2, name: "Gibson Les Paul", category: "Guitar", price: 1500, inStock: false },
     { id: 3, name: "Yamaha P-125", category: "Digital Piano", price: 650, inStock: true },
@@ -21,3 +21,21 @@ let products = [
     { id: 20, name: "Alesis Nitro Mesh Kit", category: "Electronic Drums", price: 400, inStock: true }
 ]
 
+ */
+
+
+
+class Persona {
+    constructor(edad, nombre, pais, educacion, deporte) {
+        this.edad = edad,
+            this.nombre = nombre,
+            this.pais = pais,
+            this.educacion = educacion,
+            this.deporte = deporte
+    }
+    
+}
+
+let Andres = new Persona (31, "Andres", "CR", "Msc", "Hiking")
+let Carlos = new Persona (31, "Carlos", "CR", "Msc", "Hiking")
+console.log(Andres, Carlos)
