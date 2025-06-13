@@ -24,18 +24,33 @@
  */
 
 
+let Products = [];
 
-class Persona {
-    constructor(edad, nombre, pais, educacion, deporte) {
-        this.edad = edad,
-            this.nombre = nombre,
-            this.pais = pais,
-            this.educacion = educacion,
-            this.deporte = deporte
+/* Clase */
+class Product {
+    constructor(title, description, price, thumbnail, code, stock) {
+        this.title = title;
+        this.description = description;
+        this.price = price;
+        this.thumbnail = thumbnail;
+        this.code = code;
+        this.stock = stock;
     }
-    
 }
 
-let Andres = new Persona (31, "Andres", "CR", "Msc", "Hiking")
-let Carlos = new Persona (31, "Carlos", "CR", "Msc", "Hiking")
-console.log(Andres, Carlos)
+/* Función de agregar producto*/
+function addProducts() {
+    let newProduct = new Product("Guitar", "Fender stratocaster", 2500, "Guitar.jpg", 1111, true);
+    Products.push(newProduct);
+}
+
+/* Saludo (Practicar clases)*/
+function saludo(hora, nombre) {
+    return `Bienvenido ${nombre}. Son las ${hora}`;
+}
+
+/* Main: esto debe ir al final */
+addProducts();
+console.log(saludo("9:00 am", "Carlos"));
+console.log(Products);
+
